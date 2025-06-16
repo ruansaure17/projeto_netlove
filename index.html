@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Netflix</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+
+    <header class="cabeçalho">
+      <div class="logo">
+        <img
+          src="/content/netflix_PNG25.png"
+          alt="Logobox Netflix"
+          width="80px"
+        />
+      </div>
+      <nav>
+        <a href="#">Início</a>
+        <a href="#">Séries</a>
+        <a href="#">Filmes</a>
+        <a href="#momentos">Nossos Momentos</a>
+      </nav>
+    </header>
+
+    <section class="banner">
+      <div class="conteudo">
+        <p class="titulo">2 ANOS DE NAMORO!</p>
+
+        <div class="detalhes">
+          <span
+            >Amor de verdade não é aquele que te destrói. É o que te cura</span
+          >
+          <span class="stars">
+            <i class="fa-solid fa-star" style="color: #ff0000"></i>
+            <i class="fa-solid fa-star" style="color: #ff0000"></i>
+            <i class="fa-solid fa-star" style="color: #ff0000"></i>
+            <i class="fa-solid fa-star" style="color: #ff0000"></i>
+            <i class="fa-solid fa-star" style="color: #ff0000"></i>
+          </span>
+
+          <p class="descricao">texto amoroso</p>
+        </div>
+
+        <div class="botoes">
+          <a href="principal.html" id="meuVideo"
+            ><button><i class="fa-solid fa-play"></i> Assistir</button></a
+          >
+          <button>
+            <i class="fa-solid fa-star" id="favorito"></i> Favoritar
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="momentos" id="momentos">
+      <h2>Nossos melhores momentos</h2>
+
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="content/cobri_Acara.jpg" /></div>
+          <div class="swiper-slide">
+            <img src="content/distanciamento_social.jpg" />
+          </div>
+          <div class="swiper-slide"><img src="content/frio_DOkrai.jpg" /></div>
+          <div class="swiper-slide"><img src="content/tava_noia.jpg" /></div>
+          <div class="swiper-slide">
+            <img src="content/modo_ninja_garay.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="content/vestido_florido.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="content/tava_com_Apadrao.jpg" />
+          </div>
+          <div class="swiper-slide"><img src="content/sol_do_garay.jpg" /></div>
+          <div class="swiper-slide"><img src="content/por_do_sol.jpg" /></div>
+          <div class="swiper-slide"><img src="content/gozaro.jpg" /></div>
+          <div class="swiper-slide"><img src="content/donmolina.jpg" /></div>
+          <div class="swiper-slide">
+            <img src="content/a_gente.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p class="foo">
+        Desenvolvido por Ruan Saure, com muito amor, para a Isabela ❤️
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false, // você tinha escrito "disabled"
+        },
+        slidesPerView: 5,
+        spaceBetween: 10,
+
+        breakpoints: {
+          600: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+          1800: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+          2500: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
