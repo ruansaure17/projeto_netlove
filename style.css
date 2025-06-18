@@ -220,31 +220,77 @@ footer {
   transition: opacity 2s ease;
 }
 
-@media (max-width: 900px) {
-  .video {
-    width: 100%;
-    display: flex;
-    flex-direction: column; /* melhor para telas menores */
+@media (max-width: 768px) {
+  .cabeçalho {
+    flex-direction: column;
     align-items: center;
-    gap: 15px;
+    text-align: center;
+    gap: 10px;
   }
 
-  .area_video {
+  .cabeçalho img {
+    width: 60px;
+  }
+
+  .cabeçalho nav a {
+    font-size: 12pt;
+  }
+
+  .banner {
+    padding: 200px 2rem 2rem;
+  }
+
+  .titulo {
+    font-size: 20pt;
+    text-align: center;
+  }
+
+  .detalhes {
+    font-size: 14pt;
+    text-align: center;
+  }
+
+  .descricao {
+    font-size: 10pt;
+    text-align: center;
+  }
+
+  .botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .botoes button {
     width: 90%;
-    display: flex;
-    justify-content: center;
+    font-size: 14pt;
+  }
+
+  .swiper-slide img {
+    width: 150px;
+  }
+
+  .foo {
+    font-size: 10pt;
+    text-align: center;
+  }
+
+  .video {
+    flex-direction: column;
     align-items: center;
+    padding: 1rem;
+    gap: 20px;
   }
 
-  video {
-    width: 100%; /* ocupa toda a largura disponível da área */
-    max-width: 300px;
-    margin: 0 auto;
+  .area_video video {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
   }
 
-  header,
-  nav {
-    font-size: 1.2rem; /* use fonte, padding, margin etc, não scale */
-    padding: 10px;
+  #voltar {
+    font-size: 14pt;
+    text-align: center;
   }
 }
