@@ -220,28 +220,31 @@ footer {
   transition: opacity 2s ease;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .video {
-    width: 400px;
-    display: grid;
-    place-items: center;
-    place-content: center;
-    flex-direction: row;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* melhor para telas menores */
+    align-items: center;
     gap: 15px;
   }
-  .area_video {
-    width: 300px;
 
+  .area_video {
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   video {
-    width: 200px;
-    margin-right: 30px;
+    width: 100%; /* ocupa toda a largura disponível da área */
+    max-width: 300px;
+    margin: 0 auto;
   }
 
-  .logo {
-    scale: 4;
+  header,
+  nav {
+    font-size: 1.2rem; /* use fonte, padding, margin etc, não scale */
+    padding: 10px;
   }
 }
