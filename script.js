@@ -3,16 +3,36 @@ window.addEventListener("load", () => {
   const conteudo = document.getElementById("conteudo");
 
   setTimeout(() => {
-    // Aplica fade-out no preloader
     preloader.style.opacity = "0";
 
-    // Depois de 1 segundo (tempo da transição), oculta totalmente
     setTimeout(() => {
       preloader.style.display = "none";
     }, 1000);
 
-    // Aplica fade-in no conteúdo
     conteudo.style.display = "block";
     conteudo.style.opacity = "1";
-  }, 10000); // 10 segundos
+  }, 10000);
 });
+
+function alternarFavorito(botao) {
+  const icone = botao.querySelector("i");
+  const estaFavoritado = icone.classList.contains("fa-solid");
+
+  if (estaFavoritado) {
+    // Desfavoritar
+    icone.classList.remove("fa-solid");
+    icone.classList.add("fa-regular");
+    botao.innerHTML = `<i class="fa-regular fa-star"></i> Favoritar`;
+  } else {
+    // Favoritar
+    icone.classList.remove("fa-regular");
+    icone.classList.add("fa-solid");
+    botao.innerHTML = `<i class="fa-solid fa-star"></i> Favoritado`;
+  }
+}
+
+function nao() {
+  alert(
+    "Por ser um projeto simples, essa funcionalidade não foi configurada, e está onde está por questão de estética"
+  );
+}
