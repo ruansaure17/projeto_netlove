@@ -153,7 +153,11 @@ footer {
 
 @media (min-width: 900px) {
   .swiper-slide img {
-    width: 450px;
+    width: 470px;
+  }
+  .foo {
+    font-size: 18pt;
+    font-weight: 700;
   }
 }
 
@@ -202,12 +206,6 @@ footer {
   animation: girar 1s linear infinite;
 }
 
-@media (max-width: 800px) {
-  .video {
-    width: 10px;
-  }
-}
-
 @keyframes girar {
   0% {
     transform: rotate(0deg);
@@ -244,6 +242,6 @@ footer {
   }
 
   .logo {
-    scale: 3;
+    scale: 4;
   }
 }
