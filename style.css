@@ -257,14 +257,14 @@ footer {
 
   .botoes {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
   }
 
   .botoes button {
-    width: 90%;
-    font-size: 14pt;
+    width: 70%;
+    font-size: 12pt;
   }
 
   .swiper-slide img {
